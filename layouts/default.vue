@@ -1,8 +1,8 @@
 <template>
-  <header>
-    <nav>
-      <NuxtLink to="/">KMC</NuxtLink>
-      <ul>
+  <header class="shadow-sm bg-white">
+    <nav class="container mx-auto p-4 flex justify-between">
+      <NuxtLink to="/" class="font-bold">KMC</NuxtLink>
+      <ul class="flex gap-4">
         <li>
           <NuxtLink to="/">Home</NuxtLink>
         </li>
@@ -10,14 +10,14 @@
           <NuxtLink to="/about">About</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/cars">Cars</NuxtLink>
+          <NuxtLink to="/cars" class="btn">Cars</NuxtLink>
         </li>
       </ul>
     </nav>
   </header>
 
   <!--  output the page content-->
-  <div>
+  <div class="container mx-auto p-4">
     <slot/>
   </div>
 </template>

@@ -1,13 +1,12 @@
 <template>
 <div>
-  <p>Cars</p>
 </div>
 </template>
 
-<script>
-export default {
-  name: "index"
-}
+<script setup>
+ definePageMeta({
+   layout: 'cars'
+ })
 </script>
 
 <style scoped>

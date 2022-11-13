@@ -7,6 +7,10 @@
 
 <script setup>
  const { id } = useRoute().params
+
+ definePageMeta({
+   layout: 'cars'
+ })
 </script>
 
 <style scoped>
